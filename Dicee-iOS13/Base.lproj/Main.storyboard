@@ -40,19 +40,23 @@
                                     <constraint firstAttribute="width" constant="150" id="hSp-32-ghb"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hello World" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ifA-S4-SsF">
-                                <rect key="frame" x="143" y="708" width="88" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ahA-t1-4gW">
+                                <rect key="frame" x="172.66666666666666" y="627" width="30" height="30"/>
+                                <state key="normal" title="Roll">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="rollDice" destination="dkx-z0-nzr" eventType="touchUpInside" id="nSh-iE-iLw"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="top" secondItem="Dkw-TR-1aM" secondAttribute="top" constant="44" id="20U-Ie-7tC"/>
+                            <constraint firstItem="ahA-t1-4gW" firstAttribute="top" secondItem="NCH-Nw-yF5" secondAttribute="bottom" constant="146" id="3CO-SR-qzX"/>
                             <constraint firstItem="LSp-VJ-ysH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="87" id="AGi-SD-tpV"/>
+                            <constraint firstItem="ahA-t1-4gW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="BZL-EJ-fKg"/>
                             <constraint firstItem="quC-II-Ktz" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="E5P-xc-Pkk"/>
                             <constraint firstItem="Dkw-TR-1aM" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="34" id="GVo-cx-GEj"/>
                             <constraint firstItem="NCH-Nw-yF5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-88" id="aPo-EK-VXW"/>
@@ -64,10 +68,14 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="LSp-VJ-ysH" secondAttribute="trailing" constant="87" id="wxa-C2-m6n"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="leftDice" destination="NCH-Nw-yF5" id="Lrh-wI-ScX"/>
+                        <outlet property="rightDice" destination="quC-II-Ktz" id="vGl-7N-q3i"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-832" y="137"/>
+            <point key="canvasLocation" x="-832.79999999999995" y="136.69950738916256"/>
         </scene>
     </scenes>
     <resources>
